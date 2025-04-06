@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "todo-backend/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "todo-frontend/dist/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "todo-backend/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "todo-frontend/dist/$1"
+    }
+  ],
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+}

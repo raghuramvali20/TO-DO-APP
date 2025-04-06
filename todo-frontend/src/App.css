@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #007BFF;
+}
+#header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #007BFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  left: 10px;
+}
+#mainSection{
+  display: flex;
+  height: calc(100vh - 50px);
+  justify-content: space-around;
+}
+#aside{
+  height: 100%;
+  width: 200px;
+  background-color: #007BFF;
+}
+#taskAdder{
+  position: absolute;
+  bottom: 50px;
+  left: 250px;
+  width: 70%;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #007BFF;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  background-color: #007BFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.task div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.task.completed {
+  background-color: #f8f9fa;
+}
+
+.task p.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task .important {
+  color: #ffc107;
+  margin-left: 10px;
+}
+.signUpAndLoginPages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+ background-color: #fff;
+}
+.slForm{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:1rem;
+  border:1px solid black;
+  width:300px;
+  height:55%;
+  border:solid 2px #007BFF;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+.slForm>input{
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem
+}
+.slForm>button{
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  font-size:1rem;
+}.active {
+  background-color: #e3f2fd;
+  font-weight: bold;
+}
+
+#aside li {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  list-style: none;
+}
+
+#aside li:hover {
+  background-color: #f5f5f5;
+}
+
+.task-display {
+  padding: 20px;
+  width: 100%;
+}
+
+.task-display ul {
+  list-style: none;
+  padding: 0;
+}
+#hero-section{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+#TaskAdditionalInfo{
+  padding: 1%;
+  position: absolute;
+  top: calc(50% - 27.5%);
+  left: calc(50% - 150px );
+  background-color: #ffffffd1;
+}
+.slForm > select {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+#TaskAdditionalInfo {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#TaskAdditionalInfo form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#TaskAdditionalInfo label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#TaskAdditionalInfo input[type="date"],
+#TaskAdditionalInfo select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+#TaskAdditionalInfo button {
+  padding: 10px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#TaskAdditionalInfo button:hover {
+  background-color: #106ebe;
+}
+
+.logout-button {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.logout-button:hover {
+  background-color: white;
+  color: #007BFF;
+}
+
+@media screen and (max-width: 768px) {
+  #mainSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  #aside {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .aside-active{
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    left: 0;
+    z-index: 100;
+  }
+  #hero-section {
+    width: 100%;
+    height: auto;
+  }
+  #taskAdder {
+    width: 90%;
+    left: 5%;
+  }
+  .menu-button {
+    display: block;
+  }
+
+  #header {
+    justify-content: center;
+    position: relative;
+  }
+
+  #aside {
+    position: fixed;
+    top: 50px;
+    left: -200px;
+    height: calc(100vh - 50px);
+    width: 200px;
+    background-color: #007BFF;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .aside-active {
+    display: block !important;
+    transform: translateX(200px);
+  }
+
+  #hero-section {
+    width: 100%;
+    margin-left: 0;
+    height: 90%;
+  }
+}

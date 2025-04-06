@@ -1,0 +1,18 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd todo-frontend && npm install && cd ../todo-backend && npm install",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd todo-frontend && npm run dev",
+    "dev:backend": "cd todo-backend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd todo-frontend && npm run build",
+    "build:backend": "cd todo-backend && npm run build",
+    "start": "concurrently \"cd todo-frontend && npm run preview\" \"cd todo-backend && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

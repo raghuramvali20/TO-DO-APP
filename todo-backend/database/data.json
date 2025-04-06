@@ -1,0 +1,112 @@
+{
+  "categories": [
+    "Work",
+    "Personal",
+    "Education",
+    "Health",
+    "Shopping",
+    "Family",
+    "Entertainment"
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Complete React Project",
+      "duedate": "2024-04-06",
+      "category": "Work",
+      "important": true,
+      "completed": true
+    },
+    {
+      "id": 2,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Team Meeting",
+      "duedate": "2024-04-05",
+      "category": "Work",
+      "important": true,
+      "completed": true
+    },
+    {
+      "id": 3,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Morning Workout",
+      "duedate": "2024-04-05",
+      "category": "Health",
+      "important": true,
+      "completed": true
+    },
+    {
+      "id": 4,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Evening Yoga",
+      "duedate": "2024-04-05",
+      "category": "Health",
+      "important": false,
+      "completed": false
+    },
+    {
+      "id": 5,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Buy Groceries",
+      "duedate": "2024-04-05",
+      "category": "Shopping",
+      "important": true,
+      "completed": false
+    },
+    {
+      "id": 6,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Buy New Headphones",
+      "duedate": "2024-04-06",
+      "category": "Shopping",
+      "important": false,
+      "completed": true
+    },
+    {
+      "id": 7,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Study JavaScript",
+      "duedate": "2024-04-05",
+      "category": "Education",
+      "important": true,
+      "completed": false
+    },
+    {
+      "id": 8,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Family Dinner",
+      "duedate": "2024-04-05",
+      "category": "Family",
+      "important": true,
+      "completed": false
+    },
+    {
+      "id": 9,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Call Parents",
+      "duedate": "2024-04-05",
+      "category": "Family",
+      "important": true,
+      "completed": false
+    },
+    {
+      "id": 10,
+      "email": "raghuramvali4@gmail.com",
+      "Task": "Do home work",
+      "duedate": "2025-04-05",
+      "category": "Education",
+      "important": true,
+      "completed": true
+    },
+    {
+      "id": 11,
+      "email": "raghuramvali4@outlook.com",
+      "Task": "submit project ",
+      "duedate": "2025-04-06",
+      "category": "Education",
+      "important": true,
+      "completed": false
+    }
+  ]
+}

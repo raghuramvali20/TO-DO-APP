@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "johndoe@gmial.com",
+      "password": "password123"
+    },
+    {
+      "name": "Raghu",
+      "email": "raghuramvali4@gmail.com",
+      "password": "raghi@123"
+    },
+    {
+      "name": "Ram",
+      "email": "raghuramgamingff@gmail.com",
+      "password": "1234567"
+    },
+    {
+      "name": "jrj",
+      "email": "werg",
+      "password": "wre"
+    },
+    {
+      "name": "Raghu Ram ",
+      "email": "raghuramvali4@outlook.com",
+      "password": "raghu@799"
+    }
+  ]
+}
